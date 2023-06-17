@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
-
-const dbURL = 'mongodb+srv://ricardo_guerrero:6yZP7foge7Rc13Ic@labnubes.zdwmsbb.mongodb.net/';
+require('dotenv').config();
+const dbURL = process.env.MONGO;
 
 const conectarDB = async () => {
   try {
